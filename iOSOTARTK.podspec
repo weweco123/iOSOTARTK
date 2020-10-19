@@ -7,6 +7,6 @@ s.license      = 'MIT'
 s.authors      = {'weiwei' => 'weiweivik@163.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/weweco123/iOSOTARTK.git', :tag => s.version}
-s.source_files = 'iOSOTARTK/**/*'
+s.source_files = 'iOSOTARTK'
 s.requires_arc = true
 end
