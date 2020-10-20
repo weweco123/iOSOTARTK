@@ -7,7 +7,7 @@ s.license      = 'MIT'
 s.authors      = {'weiwei' => 'weiweivik@163.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/weweco123/iOSOTARTK.git', :tag => s.version}
-s.source_files = 'Framework/**'
+s.source_files = 'Framework/*.{h,m}'
 s.vendored_libraries = "Framework/RTKLEFoundation.framework","Framework/RTKOTASDK.framework"
 s.requires_arc = true
 end
