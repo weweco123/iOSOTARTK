@@ -35,6 +35,9 @@ typedef enum : NSUInteger {
     RTKErrorPeripheralTransmissionUnresponsive,
     RTKErrorPeripheralInProgressAlready,
     
+    RTKErrorAccessorySessionNotOpen = 130,
+    
+    
     RTKErrorNotConform  = 150,
     
 } RTKErrorCode;
