@@ -14,7 +14,26 @@
 		F09A044F253E868300A2D661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09A044E253E868300A2D661 /* Assets.xcassets */; };
 		F09A0452253E868300A2D661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09A0450253E868300A2D661 /* LaunchScreen.storyboard */; };
 		F09A0455253E868300A2D661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0454253E868300A2D661 /* main.m */; };
+		F09A0467253E8EE300A2D661 /* RTKLEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A0462253E8EB900A2D661 /* RTKLEFoundation.framework */; };
+		F09A0468253E8EE300A2D661 /* RTKLEFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F09A0462253E8EB900A2D661 /* RTKLEFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F09A046A253E8EE400A2D661 /* RTKOTASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A0463253E8EB900A2D661 /* RTKOTASDK.framework */; };
+		F09A046B253E8EE400A2D661 /* RTKOTASDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F09A0463253E8EB900A2D661 /* RTKOTASDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F09A0469253E8EE300A2D661 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F09A046B253E8EE400A2D661 /* RTKOTASDK.framework in Embed Frameworks */,
+				F09A0468253E8EE300A2D661 /* RTKLEFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F09A043F253E868000A2D661 /* iOSOTARTK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSOTARTK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +48,8 @@
 		F09A0451253E868300A2D661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09A0453253E868300A2D661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09A0454253E868300A2D661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F09A0462253E8EB900A2D661 /* RTKLEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKLEFoundation.framework; sourceTree = "<group>"; };
+		F09A0463253E8EB900A2D661 /* RTKOTASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKOTASDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09A046A253E8EE400A2D661 /* RTKOTASDK.framework in Frameworks */,
+				F09A0467253E8EE300A2D661 /* RTKLEFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +68,7 @@
 		F09A0436253E868000A2D661 = {
 			isa = PBXGroup;
 			children = (
+				F09A0461253E8EB900A2D661 /* Framework */,
 				F09A0441253E868000A2D661 /* iOSOTARTK */,
 				F09A0440253E868000A2D661 /* Products */,
 			);
@@ -76,6 +100,15 @@
 			path = iOSOTARTK;
 			sourceTree = "<group>";
 		};
+		F09A0461253E8EB900A2D661 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F09A0462253E8EB900A2D661 /* RTKLEFoundation.framework */,
+				F09A0463253E8EB900A2D661 /* RTKOTASDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +119,7 @@
 				F09A043B253E868000A2D661 /* Sources */,
 				F09A043C253E868000A2D661 /* Frameworks */,
 				F09A043D253E868000A2D661 /* Resources */,
+				F09A0469253E8EE300A2D661 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +331,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9UEBE4VUJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = iOSOTARTK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -321,6 +360,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9UEBE4VUJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = iOSOTARTK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +371,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
