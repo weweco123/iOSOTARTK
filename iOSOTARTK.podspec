@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'iOSOTARTK'
-s.version      = '1.0.1'
+s.version      = '1.0.2'
 s.summary      = 'A framework for OTA files'
 s.homepage     = 'https://github.com/weweco123/iOSOTARTK'
 s.license      = 'MIT'
@@ -14,12 +14,12 @@ s.pod_target_xcconfig = {
 s.user_target_xcconfig = {
 	'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 }
-s.vendored_frameworks = "Framework/RTKLEFoundation.framework","Framework/RTKOTASDK.framework"
+s.vendored_frameworks = "vendored/RTKLEFoundation.framework","vendored/RTKOTASDK.framework"
 s.xcconfig = {
     'USER_HEADER_SEARCH_PATHS' => [
         '$(inherited)',
-        '${PODS_ROOT}/Framework/RTKLEFoundation.framework/Headers',
-        '${PODS_ROOT}/Framework/RTKOTASDK.framework/Headers'
+        '${PODS_ROOT}/vendored/RTKLEFoundation.framework/Headers',
+        '${PODS_ROOT}/vendored/RTKOTASDK.framework/Headers'
     ]
 }
 s.requires_arc = true
