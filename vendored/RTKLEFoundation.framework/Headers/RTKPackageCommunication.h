@@ -21,7 +21,7 @@ typedef void (^RTKCommunicationSendResult)(BOOL success, NSError *_Nullable erro
 /**
  *
  */
-typedef void (^RTKCommunicationRequestResult)(BOOL success, NSError *_Nullable err, NSData*_Nullable data);
+typedef void (^RTKCommunicationRequestResult)(BOOL, NSError *_Nullable, NSData*_Nullable);
 
 typedef NS_ENUM(NSUInteger, RTKPackageCommunicationStatus) {
     RTKPackageCommunicationStatusNotOpen,
@@ -93,10 +93,6 @@ typedef NS_ENUM(NSUInteger, RTKPackageCommunicationStatus) {
  */
 - (void)send:(NSData *)data completionHandler:(RTKCommunicationSendResult)handler;
 
-
-// will not invoke the -send: completion handler.
-- (void)cancelSendingOfData:(NSData *)data;
-
 @end
 
 
@@ -106,8 +102,6 @@ typedef NS_ENUM(NSUInteger, RTKPackageCommunicationStatus) {
 @interface RTKPackageACKCommunication : RTKPackageCommunication
 @property (readonly) NSMutableArray <RTKAttemptAction*> *pendingSends;
 
-// protected
-- (nullable RTKAttemptAction *)pendingSendOfID:(NSInteger)ID;
 - (nullable RTKAttemptAction *)pendingSendOfID:(NSInteger)ID subID:(NSInteger)subID;
 - (void)ackPendingSends:(RTKLEACKPackage *)ackPackage;
 
@@ -123,9 +117,6 @@ typedef NS_ENUM(NSUInteger, RTKPackageCommunicationStatus) {
 
 - (void)sendRequest:(NSData *)data completionHandler:(RTKCommunicationRequestResult)handler;
 
-- (void)sendRequest:(NSData *)data waitInterval:(NSTimeInterval)interval retryCount:(NSUInteger)count completionHandler:(RTKCommunicationRequestResult)handler;
-
-// protected
 - (nullable RTKAttemptAction *)pendingRequestOfID:(NSInteger)ID subID:(NSInteger)subID;
 
 @end

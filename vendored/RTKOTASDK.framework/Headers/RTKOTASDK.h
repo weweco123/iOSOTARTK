@@ -24,7 +24,6 @@ FOUNDATION_EXPORT const unsigned char RTKOTASDKVersionString[];
 #import <RTKOTASDK/RTKOTAUpgrade.h>
 #import <RTKOTASDK/RTKAccessoryOTAUpgrade.h>
 #import <RTKOTASDK/RTKOTADeviceInfo.h>
-#import <RTKOTASDK/RTKOTAUpgradeBin+Available.h>
 
 #import <RTKOTASDK/RTKOTACoordinator.h>
 #import <RTKOTASDK/RTKAccessoryOTACoordinator.h>

@@ -108,6 +108,12 @@ typedef NS_OPTIONS(uint32_t, RTKDFUTestModeFlag) {
 - (void)reportDFUCommunicationFailWithError:(NSError *)err;
 - (BOOL)upgradeCanceledInspect;
 
+/**
+* Connection Parameter Update 参数单位：ms
+*/
+-(void)setConnectionParametersWithMinInterval:(uint16_t)intervalMin maxInterval:(uint16_t)intervalMax latency:(uint16_t)latency supervisionTimeout:(uint16_t)timeout withCompletion:(void(^)(BOOL, NSError*_Nullable))handler;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

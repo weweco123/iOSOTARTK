@@ -41,19 +41,25 @@ typedef NS_ENUM(NSInteger, RTKOTAErrorCode) {
     RTKOTAErrorDFUImageSendFailure,                         // send image data failed.
     RTKOTAErrorDFUBufferCheckFailure,                       // Buffer check failed.
     RTKOTAErrorDFUValidate,                                 // image validate failed.
-    RTKOTAErrorDFUActive,                                   // image active failed.
-    RTKOTAErrorDFUReset,                                    // image reset failed.
+    RTKOTAErrorDFUActive,                                 // image active failed.
+    RTKOTAErrorDFUReset,                                 // image reset failed.
     RTKOTAErrorDFUCopyImage,                                // copy image failed. (used in dual bank)
     RTKOTAErrorDFUImageExistState,                          // get image exist state failed.
     RTKOTAErrorDFUDisconnectionWait,                        // wait for LE disconnection failed during upgrade.
     
-    RTKOTAErrorBinFileNotExist,                             // The specified file does not exist.
+    RTKOTAErrorBinFileNotExist,                             // The file does not exist which path identity.
     RTKOTAErrorBinFileFormatInvalid,                        // The passed in bin file format is invalid.
     
     
     RTKOTAErrorDFUCommunication,
     
     RTKOTAErrorPrepareFailed,
+    
+ 
+    RTKOTAErrorDFUConnParameterInvalid,                    // Invalid Parameter
+    RTKOTAErrorDFUConnParameterUpdateFailure,               // Fail Operation
+    RTKOTAErrorDFUConnParameterUpdateNotSupport,            // Don't Support
+    
 };
 
 #endif /* RTKOTAError_h */

@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RTKCommunicationDataReceiver : NSObject {
     @protected
     BOOL _inProgress;
-    void(^_completionHandler)(BOOL success, NSError *_Nullable err, NSData *_Nullable data);
 }
 
 @property (nonatomic, readonly) RTKPackageCommunication *communication;
@@ -31,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Protected */
 @property (readonly) NSMutableData *receivingData;
+@property (readonly) void(^completionHandler)(BOOL success, NSError *_Nullable err, NSData *_Nullable data);
 
 @end
 

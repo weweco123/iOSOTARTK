@@ -60,6 +60,7 @@ typedef enum : NSInteger {
 
 @property (nonatomic, weak) id <RTKOTAPeripheralDelegate> delegate;
 
+@property (readonly) NSUInteger batteryLevel;
 /**
  * OTA process version
  */

@@ -46,6 +46,13 @@ NS_ASSUME_NONNULL_BEGIN
 // 32-byte
 @property (readonly, nullable) NSData *checkValue;
 
+@property (nonatomic, readonly) BOOL ICDetermined;
+
+
+// Assign the OTA target peripheral IC subjectively.
+// @discussion You should call this method only if property ICDetermined is NO. You should make sure the upgrade Bin matches target peripheral, otherwise, the behaviour is not determined.
+- (void)assertAvailableForPeripheral:(RTKOTAPeripheral *)peripheral;
+
 
 + (nullable NSArray <RTKOTAUpgradeBin*> *)imagesExtractedFromMPPackFilePath:(NSString *)path error:(NSError *__nullable *__nullable)errPtr;
 

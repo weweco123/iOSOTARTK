@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString *linkKey;
 @property (readonly) NSUInteger tempBufferSize;
 
-@property (readonly) RTKOTABankType activeBank;
+@property (readonly) NSUInteger freeBank;
 @property (readonly) NSUInteger appFreeBank;
 @property (readonly) NSUInteger patchFreeBank;
 

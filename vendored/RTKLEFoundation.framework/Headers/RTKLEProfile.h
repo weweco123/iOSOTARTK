@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Invoked when the central manager fails to create a connection with a peripheral.
  *
- * @discussion Unlike the CBCentralManager, this connect methods of RTKLEProfile will time out. When connection time out, the error parameter has a RTKErrorTimeout code.
+ * @discussion Not like the CBCentralManager, this connect methods of RTKLEProfile will time out. When connection time out, the error parameter has a RTKErrorTimeout code.
  */
 - (void)profile:(RTKLEProfile *)profile didFailToConnectPeripheral:(RTKLEPeripheral *)peripheral error:(nullable NSError *)error;
 
@@ -71,8 +71,6 @@ NS_ASSUME_NONNULL_BEGIN
     @protected
     CBCentralManager *_centralManager;
 }
-
-- (instancetype)initWithDelegate:(nullable id <RTKLEProfileDelegate>)delegate;
 
 // Protected accessors
 @property (readonly) CBCentralManager *centralManager;
@@ -143,7 +141,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Protected */
 - (void)_connectTo:(RTKLEPeripheral *)peripheral withTimeout:(NSTimeInterval)timeout completionHandler:(nullable RTKLECompletionBlock)handler;
-- (void)_cancelConnectionWith:(RTKLEPeripheral *)peripheral;
 
 - (void)validatePeripheralAndOpen:(RTKLEPeripheral *)peripheral withCompletion:(RTKLECompletionBlock)handler;
 

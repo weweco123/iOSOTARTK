@@ -46,6 +46,3 @@ FOUNDATION_EXPORT const unsigned char RTKLEFoundationVersionString[];
 #import <RTKLEFoundation/RTKFileBrowseViewController.h>
 
 //#import <RTKLEFoundation/RTKTableViewCell.h>
-
-#import <RTKLEFoundation/NSData+KKAES.h>
-#import <RTKLEFoundation/NSData+CRC16.h>
