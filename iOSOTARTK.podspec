@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'iOSOTARTK'
-s.version      = '1.0.4'
+s.version      = '1.0.5'
 s.summary      = 'A framework for OTA files'
 s.homepage     = 'https://github.com/weweco123/iOSOTARTK'
 s.license      = 'MIT'

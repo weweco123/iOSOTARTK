@@ -55,10 +55,7 @@ typedef NS_ENUM(NSInteger, RTKOTAErrorCode) {
     
     RTKOTAErrorPrepareFailed,
     
- 
-    RTKOTAErrorDFUConnParameterInvalid,                    // Invalid Parameter
-    RTKOTAErrorDFUConnParameterUpdateFailure,               // Fail Operation
-    RTKOTAErrorDFUConnParameterUpdateNotSupport,            // Don't Support
+    RTKOTAErrorDFUConnParameterUpdateFailure,               // Connection Parameter Update Failed
     
 };
 

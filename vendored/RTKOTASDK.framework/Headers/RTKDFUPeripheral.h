@@ -111,7 +111,7 @@ typedef NS_OPTIONS(uint32_t, RTKDFUTestModeFlag) {
 /**
 * Connection Parameter Update 参数单位：ms
 */
--(void)setConnectionParametersWithMinInterval:(uint16_t)intervalMin maxInterval:(uint16_t)intervalMax latency:(uint16_t)latency supervisionTimeout:(uint16_t)timeout withCompletion:(void(^)(BOOL, NSError*_Nullable))handler;
+-(void)setConnectionParametersWithMinInterval:(uint16_t)intervalMin maxInterval:(uint16_t)intervalMax latency:(uint16_t)latency supervisionTimeout:(uint16_t)timeout;
 
 
 @end

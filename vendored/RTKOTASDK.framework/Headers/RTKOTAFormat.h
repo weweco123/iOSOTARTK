@@ -40,6 +40,24 @@ typedef NS_ENUM(NSUInteger, RTKOTAImageType) {
     RTKOTAImageType_Bee2_APP_DATA9                  = 0x01<<14,
     RTKOTAImageType_Bee2_APP_DATA10                 = 0x01<<15,
     
+    // SBee 2
+    RTKOTAImageType_SBee2_SOCV_CFG                   = 0x01<<0,
+    RTKOTAImageType_SBee2_SystemConfig               = 0x01<<1,
+    RTKOTAImageType_SBee2_OTAHeader                  = 0x01<<2,
+    RTKOTAImageType_SBee2_Secure_Boot_Loader         = 0x01<<3,
+    RTKOTAImageType_SBee2_ROM_PATCH                  = 0x01<<4,
+    RTKOTAImageType_SBee2_APP_IMG                    = 0x01<<5,
+    RTKOTAImageType_SBee2_APP_DATA1                  = 0x01<<6,
+    RTKOTAImageType_SBee2_APP_DATA2                  = 0x01<<7,
+    RTKOTAImageType_SBee2_APP_DATA3                  = 0x01<<8,
+    RTKOTAImageType_SBee2_APP_DATA4                  = 0x01<<9,
+    RTKOTAImageType_SBee2_APP_DATA5                  = 0x01<<10,
+    RTKOTAImageType_SBee2_APP_DATA6                  = 0x01<<11,
+    RTKOTAImageType_SBee2_UPPERSTACK                 = 0x01<<12,
+    RTKOTAImageType_SBee2_APP_DATA8                  = 0x01<<13,
+    RTKOTAImageType_SBee2_APP_DATA9                  = 0x01<<14,
+    RTKOTAImageType_SBee2_APP_DATA10                 = 0x01<<15,
+    
     // BBpro (BBLite, BBpro 2 including)
     RTKOTAImageType_BBpro_SOCV_CFG                  = 0x01<<0,
     RTKOTAImageType_BBpro_SystemConfig              = 0x01<<1,
