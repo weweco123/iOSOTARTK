@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F09A0444253E868000A2D661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0443253E868000A2D661 /* AppDelegate.m */; };
-		F09A0447253E868000A2D661 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0446253E868000A2D661 /* SceneDelegate.m */; };
 		F09A044A253E868000A2D661 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0449253E868000A2D661 /* ViewController.m */; };
 		F09A044D253E868000A2D661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09A044B253E868000A2D661 /* Main.storyboard */; };
 		F09A044F253E868300A2D661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09A044E253E868300A2D661 /* Assets.xcassets */; };
@@ -39,8 +38,6 @@
 		F09A043F253E868000A2D661 /* iOSOTARTK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSOTARTK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09A0442253E868000A2D661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F09A0443253E868000A2D661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F09A0445253E868000A2D661 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		F09A0446253E868000A2D661 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		F09A0448253E868000A2D661 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F09A0449253E868000A2D661 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F09A044C253E868000A2D661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,8 +84,6 @@
 			children = (
 				F09A0442253E868000A2D661 /* AppDelegate.h */,
 				F09A0443253E868000A2D661 /* AppDelegate.m */,
-				F09A0445253E868000A2D661 /* SceneDelegate.h */,
-				F09A0446253E868000A2D661 /* SceneDelegate.m */,
 				F09A0448253E868000A2D661 /* ViewController.h */,
 				F09A0449253E868000A2D661 /* ViewController.m */,
 				F09A044B253E868000A2D661 /* Main.storyboard */,
@@ -182,7 +177,6 @@
 				F09A044A253E868000A2D661 /* ViewController.m in Sources */,
 				F09A0444253E868000A2D661 /* AppDelegate.m in Sources */,
 				F09A0455253E868300A2D661 /* main.m in Sources */,
-				F09A0447253E868000A2D661 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +320,8 @@
 				ARCHS = (
 					armv7,
 					arm64,
+					i386,
+					x86_64,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,11 +338,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
-				ONLY_ACTIVE_ARCH = NO;
+				MARKETING_VERSION = 1.0.6;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +352,8 @@
 				ARCHS = (
 					armv7,
 					arm64,
+					i386,
+					x86_64,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,11 +370,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
