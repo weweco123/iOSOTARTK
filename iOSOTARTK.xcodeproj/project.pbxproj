@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,10 @@
 		F09A044F253E868300A2D661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09A044E253E868300A2D661 /* Assets.xcassets */; };
 		F09A0452253E868300A2D661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09A0450253E868300A2D661 /* LaunchScreen.storyboard */; };
 		F09A0455253E868300A2D661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0454253E868300A2D661 /* main.m */; };
-		F09A04FD253F00DE00A2D661 /* RTKLEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A04F9253F00DA00A2D661 /* RTKLEFoundation.framework */; };
-		F09A04FE253F00DE00A2D661 /* RTKLEFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F09A04F9253F00DA00A2D661 /* RTKLEFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F09A04FF253F00E000A2D661 /* RTKOTASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A04FA253F00DA00A2D661 /* RTKOTASDK.framework */; };
-		F09A0500253F00E000A2D661 /* RTKOTASDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F09A04FA253F00DA00A2D661 /* RTKOTASDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0BBE79227BFA01A005AD511 /* RTKLEFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBE78E27BF9CF7005AD511 /* RTKLEFoundation.xcframework */; };
+		F0BBE79327BFA01A005AD511 /* RTKLEFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBE78E27BF9CF7005AD511 /* RTKLEFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0BBE79427BFA01C005AD511 /* RTKOTASDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBE78F27BF9CF7005AD511 /* RTKOTASDK.xcframework */; };
+		F0BBE79527BFA01C005AD511 /* RTKOTASDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBE78F27BF9CF7005AD511 /* RTKOTASDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F09A0500253F00E000A2D661 /* RTKOTASDK.framework in Embed Frameworks */,
-				F09A04FE253F00DE00A2D661 /* RTKLEFoundation.framework in Embed Frameworks */,
+				F0BBE79327BFA01A005AD511 /* RTKLEFoundation.xcframework in Embed Frameworks */,
+				F0BBE79527BFA01C005AD511 /* RTKOTASDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +45,8 @@
 		F09A0451253E868300A2D661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09A0453253E868300A2D661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09A0454253E868300A2D661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F09A04F9253F00DA00A2D661 /* RTKLEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKLEFoundation.framework; sourceTree = "<group>"; };
-		F09A04FA253F00DA00A2D661 /* RTKOTASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKOTASDK.framework; sourceTree = "<group>"; };
+		F0BBE78E27BF9CF7005AD511 /* RTKLEFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RTKLEFoundation.xcframework; sourceTree = "<group>"; };
+		F0BBE78F27BF9CF7005AD511 /* RTKOTASDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RTKOTASDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09A04FF253F00E000A2D661 /* RTKOTASDK.framework in Frameworks */,
-				F09A04FD253F00DE00A2D661 /* RTKLEFoundation.framework in Frameworks */,
+				F0BBE79227BFA01A005AD511 /* RTKLEFoundation.xcframework in Frameworks */,
+				F0BBE79427BFA01C005AD511 /* RTKOTASDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		F09A0436253E868000A2D661 = {
 			isa = PBXGroup;
 			children = (
-				F09A04F8253F00DA00A2D661 /* vendored */,
+				F0BBE78D27BF9CF7005AD511 /* vendored */,
 				F09A0441253E868000A2D661 /* iOSOTARTK */,
 				F09A0440253E868000A2D661 /* Products */,
 			);
@@ -95,11 +95,11 @@
 			path = iOSOTARTK;
 			sourceTree = "<group>";
 		};
-		F09A04F8253F00DA00A2D661 /* vendored */ = {
+		F0BBE78D27BF9CF7005AD511 /* vendored */ = {
 			isa = PBXGroup;
 			children = (
-				F09A04F9253F00DA00A2D661 /* RTKLEFoundation.framework */,
-				F09A04FA253F00DA00A2D661 /* RTKOTASDK.framework */,
+				F0BBE78E27BF9CF7005AD511 /* RTKLEFoundation.xcframework */,
+				F0BBE78F27BF9CF7005AD511 /* RTKOTASDK.xcframework */,
 			);
 			path = vendored;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +370,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
