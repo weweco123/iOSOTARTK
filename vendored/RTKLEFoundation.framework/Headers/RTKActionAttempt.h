@@ -86,6 +86,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)completeWithSuccess:(BOOL)success error:(nullable NSError *)error userInfo:(nullable id)info;
 
+
+- (void)cancelCurrentAttempt;
+
 @end
 
 NS_ASSUME_NONNULL_END

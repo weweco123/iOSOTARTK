@@ -2,6 +2,19 @@
 
 Describes the conditions that an Realtek error may occur and provides recovery suggestions corresponding to those errors.
 
+## Defined in
+`RTKLEFoundation/RTKError.h`
+
+## Exception
+
+If you call a method incorrectly, Realtek SDK may throw `RTKInvalidCallException` exception.
+
+
+## Domain
+`RTKBTErrorDomain`
+
+## Error code
+
 | error code |  condition  |  recovery suggestion |
 | ------ | ---- | ----|
 | `RTKErrorAttemptTimeout` | An `RTKActionAttempt` reports this error when the attempt wait for completion time out | A high layer action should complete attempt before timeout |

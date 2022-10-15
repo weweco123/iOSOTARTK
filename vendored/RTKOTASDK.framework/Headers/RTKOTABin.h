@@ -94,6 +94,29 @@ typedef NS_ENUM(NSUInteger, RTKOTAImageType) {
     RTKOTAImageType_BBpro_UserData6                 = 31,
     RTKOTAImageType_BBpro_UserData7                 = 32,
     RTKOTAImageType_BBpro_UserData8                 = 33,
+    
+    /*Bee3Pro*/
+    RTKOTAImageType_Bee3Pro_OTAHeader               = 1,
+    RTKOTAImageType_Bee3Pro_SecurePatch             = 2,
+    RTKOTAImageType_Bee3Pro_SecureAPP               = 3,
+    RTKOTAImageType_Bee3Pro_SecureAPPData           = 4,
+    RTKOTAImageType_Bee3Pro_PMCPatch                = 5,
+    RTKOTAImageType_Bee3Pro_BTSystemPatch           = 6,
+    RTKOTAImageType_Bee3Pro_BTLowerStackPatch       = 7,
+    RTKOTAImageType_Bee3Pro_NonSecurePatch          = 8,
+    RTKOTAImageType_Bee3Pro_UpperStack              = 9,
+    RTKOTAImageType_Bee3Pro_APP                     = 10,
+    RTKOTAImageType_Bee3Pro_APPConfigData           = 11,
+    RTKOTAImageType_Bee3Pro_DSPPatch                = 12,
+    RTKOTAImageType_Bee3Pro_DSPAPP                  = 13,
+    RTKOTAImageType_Bee3Pro_DSPData                 = 14,
+    RTKOTAImageType_Bee3Pro_APPData1                = 15,
+    RTKOTAImageType_Bee3Pro_APPData2                = 16,
+    RTKOTAImageType_Bee3Pro_APPData3                = 17,
+    RTKOTAImageType_Bee3Pro_APPData4                = 18,
+    RTKOTAImageType_Bee3Pro_APPData5                = 19,
+    RTKOTAImageType_Bee3Pro_APPData6                = 20,
+    
 };
 
 

@@ -24,6 +24,7 @@ typedef enum : NSUInteger {
     RTKOTAProtocolType_Bee          =   0x0012,
     RTKOTAProtocolType_Ali          =   0x0013,
     RTKOTAProtocolType_Watch        =   0x0014,
+    RTKOTAProtocolType_0015         =   0x0015,
     
     RTKOTAProtocolTypeGATTSPP       =   RTKOTAProtocolType_NA,
     RTKOTAProtocolTypeGATT          =   RTKOTAProtocolType_Bumblebee,
@@ -146,6 +147,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) BOOL canUpdateVP;
 
+/**
+ * Returns the offset of DFU Header.
+ */
+@property (readonly) NSUInteger headerOffset;
+
+
 
 /* RWS Upgrade related properties */
 /**
@@ -224,9 +231,10 @@ NS_ASSUME_NONNULL_BEGIN
  * Check the images and returns a boolean value that indicates if those images is valid to be ugprade to device.
  *
  * @discussion This method will check if image is with older version.
- * @see -isAvailableForUpgradeOfImages:checkingImageVersion:returnError:
+ * @see -isAvailableForUpgradeOfImages:checkingImageVersion:usingStrictMechanism:returnError:
  */
 - (BOOL)isAvailableForUpgradeOfImages:(NSArray <RTKOTAUpgradeBin*> *)images
+                 usingStrictMechanism:(BOOL)usingStrict
                           returnError:(NSError **)error;
 
 /**
@@ -247,16 +255,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)isAvailableForUpgradeOfImages:(NSArray <RTKOTAUpgradeBin*> *)images
                  checkingImageVersion:(BOOL)yesOrNo
+                 usingStrictMechanism:(BOOL)usingStrict
                           returnError:(NSError **)error;
 
 
 /**
  * Check the images and returns a boolean value that indicates if those images is valid to be ugprade to device.
  *
- * @see -isAvailableForUpgradeOfImagesForPrimaryBud:imagesForSecondaryBud:checkingImageVersion:returnError:
+ * @see -isAvailableForUpgradeOfImagesForPrimaryBud:imagesForSecondaryBud:checkingImageVersion:usingStrictMechanism:returnError:
  */
 - (BOOL)isAvailableForUpgradeOfImagesForPrimaryBud:(NSArray <RTKOTAUpgradeBin*> *)imagesForPrimary
                              imagesForSecondaryBud:(NSArray <RTKOTAUpgradeBin*> *)imagesForSecondary
+                              usingStrictMechanism:(BOOL)usingStrict
                                        returnError:(NSError **)error;
 
 /**
@@ -275,6 +285,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isAvailableForUpgradeOfImagesForPrimaryBud:(NSArray <RTKOTAUpgradeBin*> *)imagesForPrimary
                              imagesForSecondaryBud:(NSArray <RTKOTAUpgradeBin*> *)imagesForSecondary
                               checkingImageVersion:(BOOL)yesOrNo
+                              usingStrictMechanism:(BOOL)usingStrict
                                        returnError:(NSError **)error;
 
 /**

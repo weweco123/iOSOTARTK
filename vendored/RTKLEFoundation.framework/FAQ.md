@@ -2,7 +2,7 @@
 
 ## How to set up Xcode project to use Realtek libraries ?
 
-Typically, Realtek libraries is distributed as framework bundles. When you want to use them in your project, you shall link the framework with your target, and embed it in your target application bundle.
+Typically, Realtek libraries are distributed as framework bundles. When you want to use them in your project, you shall link the framework with your target, and embed it in your target application bundle.
 
 ![Link frameworks](./images/Link_embed_frameworks.png)
 

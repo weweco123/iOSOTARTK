@@ -296,9 +296,17 @@ willUpgradeCompanionDevice:(RTKProfileConnection *)connection
 /**
  * A boolean value that indicates if older version image is allowed for upgrade.
  *
- * @disucssion You should set this property value only when upgrade is not in progress. The default value is NO.
+ * @disucssion You should set this property value only when upgrade is not in progress. The default value is NO. (You could choose whether or not to use a strict check mechanism)
  */
 @property BOOL olderImageAllowed;
+
+/**
+ * A boolean value that indicates whether all upgrade images should be newer than current images.
+ *
+ * @disucssion You should set this property value only when upgrade is not in progress. The default value is NO. （If @c olderImageAllowed is NO, @c usingStrictImageCheckMechanism is NO , it will compares image versions based on image priorities）
+ */
+@property BOOL usingStrictImageCheckMechanism;
+
 
 /**
  * Set the minimum battery level for upgrade.
