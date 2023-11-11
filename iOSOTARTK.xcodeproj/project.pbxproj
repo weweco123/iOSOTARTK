@@ -11,6 +11,8 @@
 		F005A6C628AB49570006BCBE /* RTKLEFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F005A6C228AB48820006BCBE /* RTKLEFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F005A6C728AB49590006BCBE /* RTKOTASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F005A6C128AB48820006BCBE /* RTKOTASDK.framework */; };
 		F005A6C828AB49590006BCBE /* RTKOTASDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F005A6C128AB48820006BCBE /* RTKOTASDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F023242A2AFF1C3200DDCC1F /* UTERTKLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02324282AFF1BCD00DDCC1F /* UTERTKLib.framework */; };
+		F023242B2AFF1C3200DDCC1F /* UTERTKLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F02324282AFF1BCD00DDCC1F /* UTERTKLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F09A0444253E868000A2D661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0443253E868000A2D661 /* AppDelegate.m */; };
 		F09A044A253E868000A2D661 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A0449253E868000A2D661 /* ViewController.m */; };
 		F09A044D253E868000A2D661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09A044B253E868000A2D661 /* Main.storyboard */; };
@@ -27,6 +29,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F005A6C828AB49590006BCBE /* RTKOTASDK.framework in Embed Frameworks */,
+				F023242B2AFF1C3200DDCC1F /* UTERTKLib.framework in Embed Frameworks */,
 				F005A6C628AB49570006BCBE /* RTKLEFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -37,6 +40,7 @@
 /* Begin PBXFileReference section */
 		F005A6C128AB48820006BCBE /* RTKOTASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKOTASDK.framework; sourceTree = "<group>"; };
 		F005A6C228AB48820006BCBE /* RTKLEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTKLEFoundation.framework; sourceTree = "<group>"; };
+		F02324282AFF1BCD00DDCC1F /* UTERTKLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTERTKLib.framework; sourceTree = "<group>"; };
 		F09A043F253E868000A2D661 /* iOSOTARTK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSOTARTK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09A0442253E868000A2D661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F09A0443253E868000A2D661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F005A6C728AB49590006BCBE /* RTKOTASDK.framework in Frameworks */,
+				F023242A2AFF1C3200DDCC1F /* UTERTKLib.framework in Frameworks */,
 				F005A6C528AB49570006BCBE /* RTKLEFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +103,7 @@
 		F0BBE78D27BF9CF7005AD511 /* vendored */ = {
 			isa = PBXGroup;
 			children = (
+				F02324282AFF1BCD00DDCC1F /* UTERTKLib.framework */,
 				F005A6C228AB48820006BCBE /* RTKLEFoundation.framework */,
 				F005A6C128AB48820006BCBE /* RTKOTASDK.framework */,
 			);
@@ -328,12 +334,12 @@
 					"$(PROJECT_DIR)/vendored",
 				);
 				INFOPLIST_FILE = iOSOTARTK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,12 +362,12 @@
 					"$(PROJECT_DIR)/vendored",
 				);
 				INFOPLIST_FILE = iOSOTARTK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ute.iOSOTARTK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
