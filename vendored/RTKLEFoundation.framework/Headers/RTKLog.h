@@ -51,6 +51,9 @@ typedef NS_ENUM(NSUInteger, RTKLogLevel) {
 /// Don't use it directly.
 + (void)_logWithLevel:(RTKLogLevel)level format:(NSString *)format, ...;
 
+/// Log a message to Realtek logging facility.
++ (void)logWithLevel:(RTKLogLevel)level format:(NSString *)format arguments:(va_list)argList;
+
 @end
 
 NS_ASSUME_NONNULL_END

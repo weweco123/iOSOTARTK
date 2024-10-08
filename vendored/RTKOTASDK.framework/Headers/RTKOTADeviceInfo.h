@@ -155,6 +155,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) BOOL supportNormalOTA;
 
 
+/// Returns a boolean value that indicating whether the device supports merge bank.
+///
+/// This is used for image bytes transmission.
+@property (readonly) BOOL supportMergeBank;
+
 /// Indicates whether the device can upgrade VP. (For AT)
 ///
 /// If this value is `YES`,  you could set `upgradeMode` to `RTKOTAUpgradeMode_updateVPData`.
@@ -200,6 +205,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Indicates whether the first or second bud is being upgraded.
 @property (readonly) RTKOTABudFlag budFlag;
+
+/// Indicates whether the current link is GATT Over BREDR.
+@property (readonly) BOOL GATTOverBREDR;
 
 @end
 
